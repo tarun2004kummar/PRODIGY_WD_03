@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87ff75; /* Coral */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 0 auto; /* Center the board */
+    background-color: #e43a37; /* Mustard */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #3d35e2; /* Sky blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #a29bfe; /* Lavender */
+}
+
+.cell.X {
+    color: #2d3436; /* Dark gray */
+}
+
+.cell.O {
+    color: #d63031; /* Crimson */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #00b894; /* Mint */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cec9; /* Turquoise */
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+.status p {
+    color: #fff;
+}
+
+#reset-btn {
+    margin-top: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 0.8em;
+}
